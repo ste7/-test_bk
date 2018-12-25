@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jaggaer test mini CMS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="/dist/remodal-default-theme.css" />
+    <link rel="stylesheet" href="/dist/remodal.css" />
+	<link rel="stylesheet" type="text/css" href="/dist/main.css">
+</head>
+
+<body>
+    <section class="login">
+        <div class="logo"></div>
+        <p>Jaggaer test mini CMS</p>
+        <form action="" role="" method="" id="loginForm">
+            <h1>Login</h1>
+            <input id="username" type="text" placeholder="Username" name="username" required="" autocomplete="off">
+            <input id="password" type="password" placeholder="Password" name="password" required="" autocomplete="off">
+            <input type="submit" value="LOGIN" class="">
+        </form>
+    </section>
+    <header>
+        <div class="logo"></div>
+        <a id="nav-icon" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="menu">
+            <div class="logo openDashboard"></div>
+            <li class="openDashboard">
+                <a>Dashboard</a>
+            </li>
+            
+            <li id="openInfo">
+                <a href="#modal-info">Info</a>
+            </li>
+            <li id="logOut">
+                <a>Log out</a>
+            </li>
+        </ul>
+        <div class="menu-backdrop"></div>
+    </header>
+    <section class="pages">
+        <article class="dashboard">
+            <div class="status">
+                <h4>Status:</h4>
+                <span id="valueOfInputJobs">0</span>
+                <p>Input</p>
+                <span id="valueOfOutputJobs">0</span>
+                <p>Output</p>
+            </div>
+            <form>
+                <h1>List of jobs:</h1>
+                <table id="history-holder">
+                    <tbody>
+                    </tbody>
+                </table>
+            </form>
+        </article>
+
+    </section>
+    <div class="remodal" data-remodal-id="modal-info">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <h1>Information</h1>
+        <p>Welcome to Jaggaer test mini CMS</p>
+        <p>Have in mind that this cms is developed for testing purposes and only developed part is for monitoring jobs</p>
+        <p>Future development may include CRUD system with full functionality of (secure login (SSO, session or token),search, pagination, validations on input, etc..)</p>
+        <p>For info on how system works and all available api calls and functionalities click <a href='/docs/manual.pdf'  target="_blank"><b>here</b></a>  also for diagram of the flow click <a href='/docs/diagram.pdf'  target="_blank"><b>here</b></a> </p>
+    </div>
+
+
+    <script src="/assets/remodal.min.js"></script>
+    <script src="/assets/bootstrap-notify.min.js"></script>
+    <script src="/assets/main.js"></script>
+</body>
+
+</html>

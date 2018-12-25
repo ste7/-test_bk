@@ -1,0 +1,3 @@
+C:\xampp\htdocs\test\api\index.php - Line:71 = XML file saved: xml_15425819083547
+C:\xampp\htdocs\test\console\index.php - Line:66 = Job started: job_15425819149304.json
+C:\xampp\htdocs\test\console\index.php - Line:201 = Job: job_15425819149304.json status : sucess
